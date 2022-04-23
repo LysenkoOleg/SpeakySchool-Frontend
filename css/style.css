@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Nextart-Heavy.otf) format("opentype");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Raleway-SemiBold", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Raleway-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Raleway-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  src: url(../fonts/Raleway-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.nav {
+  max-width: 1260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto 60px;
+}
+
+.nav__logo {
+  margin-right: 77px;
+}
+
+.nav__menu {
+  font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.nav__menu img {
+  margin-right: 46.5px;
+}
+.nav__menu.adults {
+  margin-right: 270px;
+}
+
+.container-header {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.header .title__text {
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  width: 665px;
+  margin-top: 70px;
+  margin-right: 35px;
+  margin-bottom: 58px;
+}
+.header .title__btn {
+  border-radius: 30px;
+  padding: 18px 38px;
+  background-color: #236967;
+  color: white;
+  font-size: 18px;
+}
+
+.subtitle {
+  max-width: 562px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learn {
+  max-width: 1260px;
+  margin: 70px auto 140px;
+  background: #FFFBED;
+  border-radius: 70px;
+  padding: 75px 220px 85px 213px;
+}
+.learn .learn__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+}
+.learn .learn__language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
+}
+.learn .learn__language .learn__language_english {
+  background: url(/img/main/english.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.learn .learn__language .learn__language_germany {
+  background: url(/img/main/germany.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.learn .learn__language .learn__language_spain {
+  background: url(/img/main/spain.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.learn .learn__language .learn__language_france {
+  background: url(/img/main/france.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
