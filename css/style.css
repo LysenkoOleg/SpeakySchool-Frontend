@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
-  src: url(../fonts/Nextart-Heavy.otf) format("opentype");
+  src: url(/fonts/Nextart-Heavy.ttf) format("truetype");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Raleway-SemiBold", Arial, Helvetica, sans-serif;
-  src: url(../fonts/Raleway-SemiBold.ttf) format("truetype");
+  src: url(/fonts/Raleway-SemiBold.ttf) format("truetype");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
-  src: url(../fonts/Raleway-Medium.ttf) format("truetype");
+  src: url(/fonts/Raleway-Medium.ttf) format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
-  src: url(../fonts/Raleway-Light.ttf) format("truetype");
+  src: url(/fonts/Raleway-Light.ttf) format("truetype");
   font-style: normal;
   font-weight: 300;
 }
@@ -167,10 +167,24 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 70px;
   padding: 75px 220px 85px 213px;
 }
-.learn .learn__title {
+.learn .title {
+  width: 375px;
+  position: relative;
+}
+.learn .title .learn__title {
   margin-bottom: 40px;
   font-size: 24px;
   font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.learn .title .title__rectangle {
+  background: #FFECA0;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 11px;
 }
 .learn .learn__language {
   display: -webkit-box;
@@ -215,6 +229,127 @@ h1, h2, h3, h4, h5, h6 {
 }
 .learn .learn__language .learn__language_france {
   background: url(/img/main/france.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+
+.whyss {
+  max-width: 1096px;
+  margin: 140px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.whyss .description {
+  width: 340px;
+}
+.whyss .description .title {
+  width: 326px;
+  position: relative;
+}
+.whyss .description .title .learn__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.whyss .description .title .title__rectangle {
+  background: #FFECA0;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 11px;
+}
+.whyss .description .description__text {
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 24px;
+}
+.whyss .description__answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Raleway-Medium", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.whyss .left {
+  padding-left: 90px;
+  line-height: 30px;
+}
+.whyss .left .item1 {
+  background: url(/img/main/why_left01.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.whyss .left .item2 {
+  background: url(/img/main/why_left02.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.whyss .left .item3 {
+  background: url(/img/main/why_left03.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.whyss .right {
+  padding-left: 78px;
+  line-height: 30px;
+}
+.whyss .right .item1 {
+  background: url(/img/main/why_right01.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.whyss .right .item2 {
+  background: url(/img/main/why_right02.png) no-repeat left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 70px;
+}
+.whyss .right .item3 {
+  background: url(/img/main/why_right03.png) no-repeat left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
