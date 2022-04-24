@@ -82,31 +82,29 @@
         </div>
     </section>
     <section class="add-form">
-        <div class="main">
-            <div class="main__title">Записаться на пробное занятие</div>
-            <div class="main__subtitle">
-                <h3>Взрослые</h3>
-                <h3>Дети и подростки</h3>
+            <div class="add-form__title">Записаться на пробное занятие</div>
+            <div class="add-form__subtitle">
+                <h3 class="adults">Взрослые</h3>
+                <h3 class="children">Дети и подростки</h3>
             </div>
-            <form action="#">
-                <select id="languages" class="add">
-                    <option value="english">Английский язык</option>
-                    <option value="english">Немецкий язык</option>
-                    <option value="english">Испанский язык</option>
-                    <option value="english">Французский язык</option>
+            <form action="#" class="form">
+                <select id="languages" class="form__select">
+                    <option value="english" class="add__item">Английский язык</option>
+                    <option value="germany" class="add__item">Немецкий язык</option>
+                    <option value="spain" class="add__item">Испанский язык</option>
+                    <option value="france" class="add__item">Французский язык</option>
                 </select>
-                <div class="checkbox">
-                    <p><input type="radio" value="online">Онлайн-занятия</p>
-                    <p><input type="radio" value="online">Занятия в клубе</p>
+                <div class="form__radio">
+                    <input type="radio" class="radio1" name="radio"><label for="radio">Онлайн-занятия</label>
+                    <input type="radio" class="radio2" name="radio"><label for="radio">Занятия в клубе</label>
                 </div>
-                <div class="namewithphone">
-                    <input type="text" name="name">
-                    <input type="phone" name="phone">
+                <div class="form__name-phone">
+                    <input type="text" name="name" class="under-inputs input-name" placeholder="Имя">
+                    <input type="phone" name="phone" class="under-inputs input-phone" placeholder="Телефон">
                 </div>
-                <input type="email" name="e-mail">
+                <input type="email" name="e-mail" class="under-inputs input-email" placeholder="Почта">
             </form>
-            <button type="submit">Отправить</button>
-        </div>
+            <button type="submit" class="btn">Отправить</button>
     </section>
 </body>
 </html>

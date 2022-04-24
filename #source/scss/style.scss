@@ -4,7 +4,7 @@
 $raleway-l: "Raleway-Light", Arial, Helvetica, sans-serif;
 $raleway-m: "Raleway-Medium", Arial, Helvetica, sans-serif;
 $raleway-sb: "Raleway-Semibold", Arial, Helvetica, sans-serif;
-$nexart-h: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+$nextart-h: "Nextart-Heavy", Arial, Helvetica, sans-serif;
 
 $greenclr: #236967;
 $redclr: #FE7167;
@@ -47,7 +47,7 @@ $mintclr: #61B5A9;
     display: flex;
     margin-bottom: 20px;
     .title__text {
-        font-family: $nexart-h;
+        font-family: $nextart-h;
         font-size: 50px;
         width: 665px;
         margin-top: 70px;
@@ -81,7 +81,7 @@ $mintclr: #61B5A9;
         .learn__title {
             margin-bottom: 40px;
             font-size: 24px;
-            font-family: $nexart-h;
+            font-family: $nextart-h;
             position: relative;
         }
         .title__rectangle {
@@ -139,7 +139,7 @@ $mintclr: #61B5A9;
             .learn__title {
                 margin-bottom: 30px;
                 font-size: 24px;
-                font-family: $nexart-h;
+                font-family: $nextart-h;
                 position: relative;
             }
             .title__rectangle {
@@ -217,4 +217,129 @@ $mintclr: #61B5A9;
     background: $l-yellowclr;
     margin: 140px auto;
     border-radius: 70px;
+    background: url(/img/main/add_form.png) no-repeat right;
+    background-color: $l-yellowclr;
+    .add-form__title {
+        font-family: $nextart-h;
+        font-size: 24px;
+        padding-top: 90px;
+        padding-left: 106px;
+    }
+    .add-form__subtitle {
+        display: flex;
+        font-family: $raleway-m;
+        font-size: 18px;
+        .adults {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 106px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: #236967;
+            }
+        }
+        .children {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 20px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: #94C6C4;
+            }
+        }
+    }
+    .form {
+        .form__select {
+            width: 420px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 106px;
+            padding-left: 20px;
+            border-radius: 10px;
+            font-family: $raleway-l;
+            font-size: 16px;
+            color: $d-grayclr;
+            border: 1px solid #FFECA0;
+            appearance: none;
+            background: url(/img/main/down-small.svg) no-repeat right;
+            background-color: #fff;
+            background-position-x: calc(100% - 23px);
+        }
+        .form__radio {
+            display: flex;
+            font-family: $raleway-l;
+            font-size: 16px;
+            margin-top: 14px;
+            label {
+                margin-left: 17px;
+            }
+            .radio1 {
+                margin-left: 109px;
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $greenclr;
+                border-radius: 50%;
+                &:checked {
+                    border: 3px solid $greenclr;
+                }
+            }
+            .radio2 {
+                margin-left: 67px;
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $greenclr;
+                border-radius: 50%;
+            }
+        }
+    }
+    .under-inputs {
+        margin-top: 14px;
+        width: 200px;
+        height: 50px;
+        padding-left: 20px;
+        border: 1px solid #FFECA0;
+        border-radius: 10px;
+        font-family: $raleway-l;
+        font-size: 16px;
+    }
+    .input-name {
+        margin-left: 106px;
+    }
+    .input-phone {
+        margin-left: 20px;
+    }
+    .input-email {
+        width: 420px;
+        height: 50px;
+        margin-left: 106px;
+    }
+    .btn {
+        padding: 18px 38px;
+        background: $greenclr;
+        color: #fff;
+        font-family: $raleway-sb;
+        font-size: 18px;
+        margin-left: 106px;
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 91px;
+    }
 }
