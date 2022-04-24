@@ -358,3 +358,10 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   padding-left: 70px;
 }
+
+.add-form {
+  max-width: 1046px;
+  background: #FFFBED;
+  margin: 140px auto;
+  border-radius: 70px;
+}
