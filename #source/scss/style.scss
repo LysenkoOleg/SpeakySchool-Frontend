@@ -59,6 +59,7 @@ $mintclr: #61B5A9;
         padding: 18px 38px;
         background-color: $greenclr;
         color: white;
+        font-family: $raleway-sb;
         font-size: 18px;
     }
 }
@@ -341,5 +342,121 @@ $mintclr: #61B5A9;
         border-radius: 30px;
         margin-top: 30px;
         margin-bottom: 91px;
+    }
+}
+.for-children {
+    max-width: 1033px;
+    margin: 0 auto;
+    display: flex;
+    .info {
+        margin-left: 121px;
+        .title {
+            width: 150px;
+            position: relative;
+            .title__text {
+                margin-bottom: 30px;
+                font-size: 24px;
+                font-family: $nextart-h;
+                position: relative;
+            }
+            .title__rectangle {
+                background: #FFECA0;
+                width: 100%;
+                height: 10px;            
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 11px;
+            }
+        }
+        .info__left-right {
+            display: flex;
+        }
+        .info__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        .info__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin-left: 48px;
+        }
+        .subtitle {
+            font-family: $raleway-m;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .text {
+            font-family: $raleway-l;
+            font-size: 16px;
+            line-height: 26px;
+            background: url(/img/main/check.png) no-repeat left top;
+            background-position-y: 10px;
+            padding-left: 20px;
+            letter-spacing: 2%;
+        }
+        .margin {
+            margin-bottom: 14px;
+        }
+    }
+}
+.for-adults {
+    max-width: 1046px;
+    margin: 166px auto 140px;
+    display: flex;
+    .info {
+        margin-right: 84px;
+        .title {
+            width: 210px;
+            position: relative;
+            .title__text {
+                margin-bottom: 30px;
+                font-size: 24px;
+                font-family: $nextart-h;
+                position: relative;
+            }
+            .title__rectangle {
+                background: #FFECA0;
+                width: 100%;
+                height: 10px;            
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 11px;
+            }
+        }
+        .info__left-right {
+            display: flex;
+        }
+        .info__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        .info__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin-left: 50px;
+        }
+        .subtitle {
+            font-family: $raleway-m;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .text {
+            font-family: $raleway-l;
+            font-size: 16px;
+            line-height: 26px;
+            background: url(/img/main/check.png) no-repeat left top;
+            background-position-y: 10px;
+            padding-left: 20px;
+            letter-spacing: 2%;
+        }
+        .margin {
+            margin-bottom: 14px;
+        }
     }
 }
