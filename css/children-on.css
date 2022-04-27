@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.whatisit .title2 .title__rectangle, .whatisit .title1 .title__rectangle, .results .title .title__rectangle, .easy .easy__main .left-block .title2 .title__rectangle, .easy .easy__main .left-block .title1 .title__rectangle, .change .title .title__rectangle, .learn .title .title__rectangle {
+.educations .title .title__rectangle, .whatisit .title2 .title__rectangle, .whatisit .title1 .title__rectangle, .results .title .title__rectangle, .easy .easy__main .left-block .title2 .title__rectangle, .easy .easy__main .left-block .title1 .title__rectangle, .change .title .title__rectangle, .learn .title .title__rectangle {
   background: #FFECA0;
   width: 100%;
   height: 10px;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 11px;
 }
 
-.whatisit .title2 .title__text, .whatisit .title1 .title__text, .results .title .title__text, .easy .easy__main .left-block .title2 .title__text, .easy .easy__main .left-block .title1 .title__text, .change .title .title__text, .learn .title .title__text {
+.educations .title .title__text, .whatisit .title2 .title__text, .whatisit .title1 .title__text, .results .title .title__text, .easy .easy__main .left-block .title2 .title__text, .easy .easy__main .left-block .title1 .title__text, .change .title .title__text, .learn .title .title__text {
   margin-bottom: 40px;
   font-size: 24px;
   font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
@@ -455,4 +455,448 @@ h3 {
 .whatisit .whatisit__block .downrow .item3 {
   background: url(/img/children_on/union06.png) no-repeat top left;
   padding-top: 22px;
+}
+
+.educations {
+  max-width: 1046px;
+  margin: 140px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.educations .title {
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+.educations .subtitle-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.educations .subtitle-up .left {
+  width: 260px;
+  margin-right: 20px;
+  position: relative;
+}
+.educations .subtitle-up .left::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #61B5A9;
+  position: absolute;
+}
+.educations .subtitle-up .right {
+  width: 260px;
+  position: relative;
+}
+.educations .subtitle-up .right::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #61B5A9;
+  position: absolute;
+}
+.educations .subtitle-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  text-align: center;
+  margin: 33px auto 0;
+  cursor: pointer;
+}
+.educations .subtitle-down .left {
+  width: 140px;
+  margin-right: 20px;
+  position: relative;
+}
+.educations .subtitle-down .left::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #61B5A9;
+  position: absolute;
+}
+.educations .subtitle-down .right {
+  width: 140px;
+  position: relative;
+}
+.educations .subtitle-down .right::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #61B5A9;
+  position: absolute;
+}
+.educations .programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px auto 0;
+}
+.educations .programs .program1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 420px;
+  border-radius: 30px;
+  background: url(/img/children_on/lessons_30minutes_04.png) no-repeat top;
+  background-color: #FFFBED;
+}
+.educations .programs .program1 h3 {
+  margin-top: 190px;
+  color: #363636;
+}
+.educations .programs .program1 .price {
+  margin-top: 14px;
+  margin-bottom: 58px;
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
+.educations .programs .program1 .program-btn {
+  border-radius: 30px;
+  padding: 18px 38px;
+  background-color: #236967;
+  color: white;
+  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.educations .programs .program2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 440px;
+  border-radius: 30px;
+  background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
+  background-color: #FFFBED;
+}
+.educations .programs .program2 h3 {
+  margin-top: 190px;
+  color: #363636;
+}
+.educations .programs .program2 .price {
+  margin-top: 14px;
+  margin-bottom: 58px;
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
+.educations .programs .program2 .program-btn {
+  border-radius: 30px;
+  padding: 18px 38px;
+  background-color: #236967;
+  color: white;
+  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.educations .programs .program3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 420px;
+  border-radius: 30px;
+  background: url(/img/children_on/lessons_30minutes12.png) no-repeat top;
+  background-color: #FFFBED;
+}
+.educations .programs .program3 h3 {
+  margin-top: 190px;
+  color: #363636;
+}
+.educations .programs .program3 .price {
+  margin-top: 14px;
+  margin-bottom: 58px;
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
+.educations .programs .program3 .program-btn {
+  border-radius: 30px;
+  padding: 18px 38px;
+  background-color: #236967;
+  color: white;
+  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.add-form {
+  max-width: 1046px;
+  background: #FFFBED;
+  margin: 140px auto;
+  border-radius: 70px;
+  background: url(/img/children_on/add_form.png) no-repeat right;
+  background-color: #FFFBED;
+}
+.add-form .add-form__title {
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding-top: 90px;
+  padding-left: 106px;
+}
+.add-form .add-form__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+.add-form .add-form__subtitle .adults {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 106px;
+  position: relative;
+}
+.add-form .add-form__subtitle .adults:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #94C6C4;
+}
+.add-form .add-form__subtitle .children {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+.add-form .add-form__subtitle .children:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #236967;
+}
+.add-form .form .form__select {
+  width: 420px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 106px;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #363636;
+  border: 1px solid #FFECA0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(/img/main/down-small.svg) no-repeat right;
+  background-color: #fff;
+  background-position-x: calc(100% - 23px);
+}
+.add-form .form .form__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 14px;
+}
+.add-form .form .form__radio label {
+  margin-left: 17px;
+}
+.add-form .form .form__radio .radio1 {
+  margin-left: 109px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #236967;
+  border-radius: 50%;
+}
+.add-form .form .form__radio .radio1:checked {
+  border: 3px solid #236967;
+}
+.add-form .form .form__radio .radio2 {
+  margin-left: 67px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #236967;
+  border-radius: 50%;
+}
+.add-form .form .form__radio .radio2:checked {
+  border: 3px solid #236967;
+}
+.add-form .under-inputs {
+  margin-top: 14px;
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid #FFECA0;
+  border-radius: 10px;
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.add-form .input-name {
+  margin-left: 106px;
+}
+.add-form .input-phone {
+  margin-left: 20px;
+}
+.add-form .input-email {
+  width: 420px;
+  height: 50px;
+  margin-left: 106px;
+}
+.add-form .btn {
+  padding: 18px 38px;
+  background: #236967;
+  color: #fff;
+  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-left: 106px;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 91px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 140px;
+  background: #FFFBED;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+}
+.footer .main {
+  max-width: 1260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 69px;
+}
+.footer .main .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .main .footer__links .links__title {
+  margin-bottom: 17px;
+  margin-top: 15px;
+}
+.footer .main .footer__links .link {
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+.footer .main .footer__links .link:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+.footer .main .footer__links .copy {
+  margin-top: 62px;
+  font-size: 14px;
+}
+.footer .main .footer__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .main .footer__center .center__contacts {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.footer .main .footer__center .footer__btn {
+  border-radius: 30px;
+  padding: 18px 38px;
+  background-color: #236967;
+  color: white;
+  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.footer .main .footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 195px;
+  text-align: end;
+  margin-left: 62px;
+}
+.footer .main .footer__contacts .contacts__title {
+  margin-bottom: 17px;
+  margin-top: 15px;
+}
+.footer .main .footer__contacts p:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+.footer .main .footer__contacts .design {
+  margin-top: 48px;
+  font-size: 14px;
 }
