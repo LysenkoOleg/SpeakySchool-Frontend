@@ -246,33 +246,52 @@ h3 {
 }
 
 .change {
-  max-width: 1234px;
+  max-width: 975px;
   margin: 0 auto;
 }
 .change .title {
-  width: 415px;
+  width: 375px;
   position: relative;
 }
-.change .change__row {
+.change .change__row-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 5px;
 }
-.change .change__row h3 {
-  width: 400px;
+.change .change__row-up .left-up {
+  background: url(/img/children_of/skills_left01.png) no-repeat left;
+  padding-left: 72px;
+  width: 340px;
+  margin-right: 122px;
 }
-.change .change__row .yellow-line {
-  width: 275px;
-  padding-left: 20px;
-  background: url(/img/children_on/yellow-line.png) no-repeat left;
+.change .change__row-up .right-up {
+  background: url(/img/children_of/skills_right01.png) no-repeat left;
+  padding-left: 72px;
+  width: 398px;
 }
-.change .change__row .orange-line {
-  width: 381px;
-  padding-left: 20px;
-  background: url(/img/children_on/orange-line.png) no-repeat left;
+.change .change__row-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 40px;
+}
+.change .change__row-down .left-down {
+  background: url(/img/children_of/skills_left02.png) no-repeat left;
+  padding-left: 72px;
+  width: 340px;
+  margin-right: 122px;
+}
+.change .change__row-down .right-down {
+  background: url(/img/children_of/skills_right02.png) no-repeat left;
+  padding-left: 72px;
+  width: 398px;
 }
 
 .easy {
@@ -402,18 +421,12 @@ h3 {
 .whatisit .title1 .title__text {
   margin-bottom: 17px;
 }
-.whatisit .title1 .title__rectangle {
-  height: 14px;
-}
 .whatisit .title2 {
   width: 225px;
   position: relative;
 }
 .whatisit .title2 .title__text {
   margin-bottom: 40px;
-}
-.whatisit .title2 .title__rectangle {
-  height: 14px;
 }
 .whatisit .whatisit__block {
   margin-left: 73px;
@@ -474,7 +487,7 @@ h3 {
   margin: 0 auto;
   position: relative;
 }
-.educations .subtitle-up {
+.educations .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,48 +495,26 @@ h3 {
   margin: 0 auto;
   cursor: pointer;
 }
-.educations .subtitle-up .left {
+.educations .subtitle .left {
   width: 260px;
   margin-right: 20px;
   position: relative;
 }
-.educations .subtitle-up .left::after {
+.educations .subtitle .left::after {
   content: "";
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #61B5A9;
+  background: #236967;
   position: absolute;
 }
-.educations .subtitle-up .right {
+.educations .subtitle .middle {
   width: 260px;
-  position: relative;
-}
-.educations .subtitle-up .right::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background: #61B5A9;
-  position: absolute;
-}
-.educations .subtitle-down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 260px;
-  text-align: center;
-  margin: 33px auto 0;
-  cursor: pointer;
-}
-.educations .subtitle-down .left {
-  width: 140px;
   margin-right: 20px;
   position: relative;
 }
-.educations .subtitle-down .left::after {
+.educations .subtitle .middle::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -532,11 +523,11 @@ h3 {
   background: #61B5A9;
   position: absolute;
 }
-.educations .subtitle-down .right {
-  width: 140px;
+.educations .subtitle .right {
+  width: 260px;
   position: relative;
 }
-.educations .subtitle-down .right::after {
+.educations .subtitle .right::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -549,10 +540,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 40px auto 0;
 }
 .educations .programs .program1 {
@@ -605,6 +596,7 @@ h3 {
   width: 300px;
   height: 440px;
   border-radius: 30px;
+  margin-left: 73px;
   background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
   background-color: #FFFBED;
 }

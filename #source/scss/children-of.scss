@@ -143,10 +143,10 @@ h3 {
 }
 
 .change {
-    max-width: 1234px;
+    max-width: 975px;
     margin: 0 auto;
     .title {
-        width: 415px;
+        width: 375px;
         position: relative;
         .title__text {
             @extend %yellowtitle;
@@ -155,21 +155,36 @@ h3 {
             @extend %bgrectangle;
         }
     }
-    .change__row {
+    .change__row-up {
         display: flex;
-        justify-content: space-between;
-        h3 {
-            width: 400px;
+        justify-content: start;
+        margin-bottom: 5px;
+        .left-up {
+            background: url(/img/children_of/skills_left01.png) no-repeat left;
+            padding-left: 72px;
+            width: 340px;
+            margin-right: 122px;
         }
-        .yellow-line {
-            width: 275px;
-            padding-left: 20px;
-            background: url(/img/children_on/yellow-line.png) no-repeat left;
+        .right-up {
+            background: url(/img/children_of/skills_right01.png) no-repeat left;
+            padding-left: 72px;
+            width: 398px;
         }
-        .orange-line {
-            width: 381px;
-            padding-left: 20px;
-            background: url(/img/children_on/orange-line.png) no-repeat left;
+    }
+    .change__row-down {
+        display: flex;
+        justify-content: start;
+        height: 40px;
+        .left-down {
+            background: url(/img/children_of/skills_left02.png) no-repeat left;
+            padding-left: 72px;
+            width: 340px;
+            margin-right: 122px;
+        }
+        .right-down {
+            background: url(/img/children_of/skills_right02.png) no-repeat left;
+            padding-left: 72px;
+            width: 398px;
         }
     }
 }
@@ -302,7 +317,6 @@ h3 {
         }
         .title__rectangle {
             @extend %bgrectangle;
-            height: 14px;
         }
     }
     .title2 {
@@ -314,7 +328,6 @@ h3 {
         }
         .title__rectangle {
             @extend %bgrectangle;
-            height: 14px;
         }
     }
     .whatisit__block {
@@ -373,7 +386,7 @@ h3 {
             @extend %bgrectangle;
         }
     }
-    .subtitle-up {
+    .subtitle {
         display: flex;
         text-align: center;
         margin: 0 auto;
@@ -388,6 +401,20 @@ h3 {
                 height: 2px;
                 bottom: 0;
                 left: 0;
+                background: $greenclr;
+                position: absolute;
+            }
+        }
+        .middle {
+            width: 260px;
+            margin-right: 20px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
                 background: $mintclr;
                 position: absolute;
             }
@@ -406,44 +433,10 @@ h3 {
             }
         }
     }
-    .subtitle-down {
-        display: flex;
-        width: 260px;
-        text-align: center;
-        margin: 33px auto 0;
-        cursor: pointer;
-        .left {
-            width: 140px;
-            margin-right: 20px;
-            position: relative;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background: $mintclr;
-                position: absolute;
-            }
-        }
-        .right {
-            width: 140px;
-            position: relative;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background: $mintclr;
-                position: absolute;
-            }
-        }
-    }
     .programs {
         display: flex;
+        align-items: center;
         width: 100%;
-        justify-content: space-between;
         margin: 40px auto 0;
         .program1 {
             display: flex;
@@ -481,6 +474,7 @@ h3 {
             width: 300px;
             height: 440px;
             border-radius: 30px;
+            margin-left: 73px;
             background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
             background-color: $l-yellowclr;
             h3 {
