@@ -10,9 +10,15 @@
 <body>
     <nav class="nav">
         <div class="nav__logo">
-            <img src="/img/main/logo_header.png" alt="SPEAKY SCHOOL">
+            <a src="/main.html"><img src="/img/main/logo_header.png" alt="SPEAKY SCHOOL"></a>
         </div>
-        <a href="#" class="nav__menu children">Обучение детей <img src="/img/main/down-small.png" alt="down-small"></a>
+        <div>
+            <a href="#" class="nav__menu children" id="children">Обучение детей <img src="/img/main/down-small.png" alt="down-small"></a>
+            <div class="children-option" id="children-option">
+                <a href="/children-on.html">Онлайн-занятия</a>
+                <a href="/children-of.html">Занятия в клубе</a>
+            </div>
+        </div>
         <a href="/adults.html" class="nav__menu adults">Обучение взрослых</a>
         <div class="contacts">
             <a href="#" class="contacts__facebook">
@@ -36,7 +42,7 @@
         <div class="header">
             <div class="title">
                 <h1 class="title__text">ШКОЛА ИНОСТРАННЫХ ЯЗЫКОВ ДЛЯ ВСЕЙ СЕМЬИ</h1>
-                <a href="#" class="title__btn">Пробное занятие</a>
+                <a href="#" class="style-btn title__btn">Пробное занятие</a>
             </div>
             <div class="header__logo">
                 <img src="/img/main/head.png" alt="head">
@@ -95,16 +101,16 @@
                     <option value="france" class="add__item">Французский язык</option>
                 </select>
                 <div class="form__radio">
-                    <input type="radio" class="add-radio radio1" name="radio"><label for="radio">Онлайн-занятия</label>
+                    <input type="radio" class="add-radio radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
                     <input type="radio" class="radio radio2" name="radio"><label for="radio">Занятия в клубе</label>
                 </div>
                 <div class="form__name-phone">
-                    <input type="text" name="name" class="under-inputs input-name" placeholder="Имя">
-                    <input type="phone" name="phone" class="under-inputs input-phone" placeholder="Телефон">
+                    <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
+                    <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
                 </div>
-                <input type="email" name="e-mail" class="under-inputs input-email" placeholder="Почта">
+                <input type="email" name="e-mail" class="under-inputs input-email style-input" placeholder="Почта">
             </form>
-            <button type="submit" class="btn">Отправить</button>
+            <button type="submit" class="style-btn btn">Отправить</button>
     </section>
     <section class="for-children">
         <img src="/img/main/info_children.png" alt="info_children">
@@ -244,12 +250,12 @@
                 <input type="radio" class="radio2" name="radio"><label for="radio">Занятия в клубе</label>
             </div>
             <div class="form__name-phone">
-                <input type="text" name="name" class="under-inputs input-name" placeholder="Имя">
-                <input type="phone" name="phone" class="under-inputs input-phone" placeholder="Телефон">
+                <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
+                <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
             </div>
-            <input type="email" name="e-mail" class="under-inputs input-email" placeholder="Почта">
+            <input type="email" name="e-mail" class="under-inputs input-email style-input" placeholder="Почта">
         </form>
-        <button type="submit" class="btn">Отправить</button>
+        <button type="submit" class="style-btn btn">Отправить</button>
     </section>
     <section class="history">
         <div class="title">
@@ -317,7 +323,7 @@
                         <img src="/img/main/vk.png" alt="vk">
                     </a>
                 </div>
-                <a href="#" class="footer__btn">Онлайн-оплата</a>
+                <a href="#" class="style-btn footer__btn">Онлайн-оплата</a>
             </div>
             <div class="footer__contacts">
                 <h3 class="contacts__title">Контакты</h3>
@@ -328,5 +334,6 @@
             </div>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>
