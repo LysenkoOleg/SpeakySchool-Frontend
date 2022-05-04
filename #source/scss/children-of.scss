@@ -599,6 +599,7 @@ h3 {
         }
         .form__radio {
             display: flex;
+            align-items: center;
             font-family: $raleway-l;
             font-size: 16px;
             margin-top: 14px;
@@ -612,8 +613,20 @@ h3 {
                 height: 12px;
                 border: 1px solid $greenclr;
                 border-radius: 50%;
+                position: relative;
                 &:checked {
-                    border: 3px solid $greenclr;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: -3px;
+                        right: -3px;
+                        width: 200%;
+                        height: 200%;
+                        border-radius: 50%;
+                        border: 1px solid $greenclr;
+                    }
+                    background: $greenclr;
+                    border: 3px solid $l-yellowclr;
                 }
             }
             .radio2 {
@@ -623,8 +636,20 @@ h3 {
                 height: 12px;
                 border: 1px solid $greenclr;
                 border-radius: 50%;
+                position: relative;
                 &:checked {
-                    border: 3px solid $greenclr;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: -3px;
+                        right: -3px;
+                        width: 200%;
+                        height: 200%;
+                        border-radius: 50%;
+                        border: 1px solid $greenclr;
+                    }
+                    background: $greenclr;
+                    border: 3px solid $l-yellowclr;
                 }
             }
         }

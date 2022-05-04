@@ -740,6 +740,9 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin-top: 14px;
@@ -756,9 +759,21 @@ h3 {
   height: 12px;
   border: 1px solid #236967;
   border-radius: 50%;
+  position: relative;
 }
 .add-form .form .form__radio .radio1:checked {
-  border: 3px solid #236967;
+  background: #236967;
+  border: 3px solid #FFFBED;
+}
+.add-form .form .form__radio .radio1:checked::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  border: 1px solid #236967;
 }
 .add-form .form .form__radio .radio2 {
   margin-left: 67px;
@@ -769,9 +784,21 @@ h3 {
   height: 12px;
   border: 1px solid #236967;
   border-radius: 50%;
+  position: relative;
 }
 .add-form .form .form__radio .radio2:checked {
-  border: 3px solid #236967;
+  background: #236967;
+  border: 3px solid #FFFBED;
+}
+.add-form .form .form__radio .radio2:checked::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  border: 1px solid #236967;
 }
 .add-form .under-inputs {
   margin-top: 14px;
