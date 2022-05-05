@@ -8,6 +8,27 @@
     <title>Speaky School</title>
 </head>
 <body>
+    <div class="main-wrapper">
+        <div class="wrapper-modal" id="wrapper-modal">
+            <div class="overlay" id="overlay"></div>
+            <div class="modal-window" id="modal-window">
+                <a href="#footer" class="btn-close-modal">Закрыть</a>
+                <h2 class="modal-window__title">ОПЛАТА УСЛУГ</h2>
+                <form action="#footer" class="modal-window__form">
+                    <div class="inputs">
+                        <div>
+                            <input type="text" class="input" placeholder="Имя" name="name">
+                            <input type="tel" class="input" placeholder="Телефон" name="phone">
+                        </div>
+                        <input type="email" class="input input-mail" placeholder="Почта" name="e-mail">
+                        <input type="number" class="input input-price" placeholder="Сумма платежа" name="price">
+                    </div>
+                </form>
+                <p class="modal-window__text">Нажимая кнопку "Оплатить", Вы соглашаетесь с условиями договора оферты и обработку персональных данных.</p>
+                <button type="submit" class="modal-btn" id="modal-btn">Отправить</button>
+            </div>
+        </div>
+    </div>
     <nav class="nav">
         <div class="nav__logo">
             <a href="/main.html"><img src="/img/main/logo_header.png" alt="SPEAKY SCHOOL"></a>

@@ -40,3 +40,14 @@ dropdowns.forEach(function(dropdownWrapper) {
         }
     })
 })
+
+const footerBtn = document.querySelector('.footer__btn');
+const wrapperModal = document.querySelector('.wrapper-modal');
+const btnCloseModal = document.querySelector('.btn-close-modal');
+
+footerBtn.addEventListener('click', function() {
+    wrapperModal.classList.add('wrapper-modal_active');
+    btnCloseModal.addEventListener('click', function() {
+        wrapperModal.classList.remove('wrapper-modal_active');
+    })
+})

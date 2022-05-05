@@ -137,6 +137,123 @@ h3 {
           box-shadow: 0px 2px 4px #FFECA0;
 }
 
+.wrapper-modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 10;
+}
+
+.wrapper-modal_active {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000;
+  opacity: 50%;
+}
+
+.modal-window {
+  position: absolute;
+  max-width: 860px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  background: #FFFBED;
+  border-radius: 70px;
+  background: url(/img/main/modal-left.png) no-repeat left, url(/img/main/modal-right.png) no-repeat right;
+  background-color: #FFFBED;
+}
+.modal-window .btn-close-modal {
+  display: block;
+  padding-top: 39px;
+  padding-left: 585px;
+  padding-right: 220px;
+  text-decoration: underline;
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #363636;
+}
+.modal-window .modal-window__title {
+  padding-top: 17px;
+  padding-left: 219px;
+  font-size: 24px;
+  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
+}
+.modal-window .inputs {
+  padding-left: 219px;
+  margin-top: 20px;
+  width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal-window .inputs div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+}
+.modal-window .inputs .input {
+  margin-top: 14px;
+  width: 200px;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid #FFECA0;
+  border-radius: 10px;
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.modal-window .inputs .input-mail {
+  width: 420px;
+}
+.modal-window .inputs .input-price {
+  width: 420px;
+  background: url(/img/main/modal-rub.png) no-repeat right;
+  background-position-x: calc(100% - 20px);
+  background-color: #fff;
+}
+.modal-window .inputs input[type=number]::-webkit-outer-spin-button,
+.modal-window .inputs input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal-window .modal-window__text {
+  padding-right: 242px;
+  padding-left: 219px;
+  margin-top: 24px;
+}
+.modal-window .modal-btn {
+  padding: 18px 38px;
+  background: #236967;
+  color: #fff;
+  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-left: 106px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 73px;
+  margin-left: 219px;
+}
+
 .nav {
   max-width: 1260px;
   display: -webkit-box;
@@ -148,7 +265,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px auto 60px;
+  margin: 0 auto 60px;
+  padding-top: 50px;
 }
 .nav .nav__logo {
   margin-right: 77px;
@@ -196,6 +314,7 @@ h3 {
   font-size: 16px;
 }
 .children-option.active a:first-of-type {
+  margin-top: 8px;
   margin-bottom: 12px;
 }
 
