@@ -43,7 +43,7 @@
             <div class="title">
                 <h1 class="title__text">ЭФФЕКТИВНОЕ ИЗУЧЕНИЕ ЯЗЫКОВ</h1>
                 <h3 class="title__subtext">Прокачайте язык вместе с нами под любые цели</h3>
-                <a href="#" class="style-btn title__btn">Пробное занятие</a>
+                <button type="button" class="style-btn title__btn">Пробное занятие</button>
             </div>
             <div class="header__logo">
                 <img src="/img/adults/head.png" alt="head">
@@ -136,7 +136,7 @@
                     <h2 class="title__text">ИНТЕРЕСНЫ, КОГДА ОНИ ЯСНЫ</h2>
                 </div>
                 <p>А может быть язык вам нужен для путешествий? Для переезда в другую страну? Или у вас профессиональные цели и язык вам нужен для повышения? </p>
-                <a href="#" class="style-btn btn">Пробное занятие</a>
+                <button type="button" class="style-btn btn">Пробное занятие</button>
             </div>
             <img src="/img/adults/easy.png" alt="easy">
         </div>
@@ -181,12 +181,18 @@
             <h3 class="children">Дети и подростки</h3>
         </div>
         <form action="#" class="form">
-            <select id="languages" class="form__select">
-                <option value="english" class="add__item">Английский язык</option>
-                <option value="germany" class="add__item">Немецкий язык</option>
-                <option value="spain" class="add__item">Испанский язык</option>
-                <option value="france" class="add__item">Французский язык</option>
-            </select>
+            <div class="form-group">
+                <div class="dropdown">
+                    <button type="button" class="dropdown__btn">Английский язык</button>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__list-item" data-value="english">Английский язык</li>
+                        <li class="dropdown__list-item" data-value="germany">Немецкий язык</li>
+                        <li class="dropdown__list-item" data-value="spain">Испанский язык</li>
+                        <li class="dropdown__list-item" data-value="france">Французский язык</li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                </div>
+            </div>
             <div class="form__radio">
                 <input type="radio" class="add-radio radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
                 <input type="radio" class="radio radio2" name="radio"><label for="radio">Занятия в клубе</label>
@@ -229,7 +235,7 @@
                         <img src="/img/main/vk.png" alt="vk">
                     </a>
                 </div>
-                <a href="#" class="style-btn footer__btn">Онлайн-оплата</a>
+                <button type="button" class="style-btn footer__btn">Онлайн-оплата</button>
             </div>
             <div class="footer__contacts">
                 <h3 class="contacts__title">Контакты</h3>
@@ -240,6 +246,6 @@
             </div>
         </div>
     </footer>
-    <script src="/js/children-of.js"></script>
+    <script src="/js/adults.js"></script>
 </body>
 </html>

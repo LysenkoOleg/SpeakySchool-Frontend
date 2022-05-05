@@ -42,7 +42,7 @@
         <div class="header">
             <div class="title">
                 <h1 class="title__text">ШКОЛА ИНОСТРАННЫХ ЯЗЫКОВ ДЛЯ ВСЕЙ СЕМЬИ</h1>
-                <a href="#" class="style-btn title__btn">Пробное занятие</a>
+                <button type="button" class="style-btn title__btn">Пробное занятие</button>
             </div>
             <div class="header__logo">
                 <img src="/img/main/head.png" alt="head">
@@ -94,12 +94,18 @@
                 <h3 class="children">Дети и подростки</h3>
             </div>
             <form action="#" class="form">
-                <select id="languages" class="form__select">
-                    <option value="english" class="add__item">Английский язык</option>
-                    <option value="germany" class="add__item">Немецкий язык</option>
-                    <option value="spain" class="add__item">Испанский язык</option>
-                    <option value="france" class="add__item">Французский язык</option>
-                </select>
+                <div class="form-group">
+                    <div class="dropdown">
+                        <button type="button" class="dropdown__btn">Английский язык</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__list-item" data-value="english">Английский язык</li>
+                            <li class="dropdown__list-item" data-value="germany">Немецкий язык</li>
+                            <li class="dropdown__list-item" data-value="spain">Испанский язык</li>
+                            <li class="dropdown__list-item" data-value="france">Французский язык</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                    </div>
+                </div>
                 <div class="form__radio">
                     <input type="radio" class="add-radio radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
                     <input type="radio" class="radio radio2" name="radio"><label for="radio">Занятия в клубе</label>
@@ -239,12 +245,18 @@
             <h3 class="children">Дети и подростки</h3>
         </div>
         <form action="#" class="form">
-            <select id="languages" class="form__select">
-                <option value="english" class="add__item">Английский язык</option>
-                <option value="germany" class="add__item">Немецкий язык</option>
-                <option value="spain" class="add__item">Испанский язык</option>
-                <option value="france" class="add__item">Французский язык</option>
-            </select>
+            <div class="form-group">
+                <div class="dropdown">
+                    <button type="button" class="dropdown__btn">Английский язык</button>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__list-item" data-value="english">Английский язык</li>
+                        <li class="dropdown__list-item" data-value="germany">Немецкий язык</li>
+                        <li class="dropdown__list-item" data-value="spain">Испанский язык</li>
+                        <li class="dropdown__list-item" data-value="france">Французский язык</li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                </div>
+            </div>
             <div class="form__radio">
                 <input type="radio" class="radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
                 <input type="radio" class="radio2" name="radio"><label for="radio">Занятия в клубе</label>
@@ -323,7 +335,7 @@
                 <img src="/img/main/vk.png" alt="vk">
             </a>
                 </div>
-                <a href="#" class="style-btn footer__btn">Онлайн-оплата</a>
+                <button type="button" class="style-btn footer__btn">Онлайн-оплата</button>
             </div>
             <div class="footer__contacts">
                 <h3 class="contacts__title">Контакты</h3>

@@ -454,7 +454,13 @@ h3 {
   left: 0;
   background: #94C6C4;
 }
-.add-form .form .form__select {
+.add-form .form .dropwdown {
+  position: relative;
+}
+.add-form .form .dropdown__btn {
+  position: relative;
+  display: block;
+  text-align: left;
   width: 420px;
   height: 50px;
   margin-top: 30px;
@@ -471,6 +477,40 @@ h3 {
   background: url(/img/main/down-small.svg) no-repeat right;
   background-color: #fff;
   background-position-x: calc(100% - 23px);
+}
+.add-form .form .dropdown__list {
+  display: none;
+  position: absolute;
+  text-align: left;
+  width: 420px;
+  margin-top: 10px;
+  margin-left: 106px;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-family: "Raleway-Light", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #363636;
+  border: 1px solid #FFECA0;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1000;
+}
+.add-form .form .dropdown__list_active {
+  display: block;
+}
+.add-form .form .dropdown__list-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.add-form .form .dropdown__list-item:first-of-type {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  background: url(/img/main/up-small.png) no-repeat right;
+  background-position-x: calc(100% - 23px);
+}
+.add-form .form .dropdown__input-hidden {
+  display: none;
 }
 .add-form .form .form__radio {
   display: -webkit-box;
@@ -496,6 +536,7 @@ h3 {
   border: 1px solid #236967;
   border-radius: 50%;
   position: relative;
+  z-index: 100;
 }
 .add-form .form .form__radio .radio1:checked {
   background: #236967;
@@ -550,7 +591,7 @@ h3 {
   margin-left: 106px;
 }
 .add-form .input-phone {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 .add-form .input-email {
   width: 420px;
