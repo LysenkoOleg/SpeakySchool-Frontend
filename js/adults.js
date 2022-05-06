@@ -51,3 +51,16 @@ footerBtn.addEventListener('click', function() {
         wrapperModal.classList.remove('wrapper-modal_active');
     })
 })
+
+const trialBtns = document.querySelectorAll('.trial-btn');
+const wrapperModalTrial = document.querySelector('.wrapper-modal-trial');
+const btnCloseModalTrial = document.querySelector('.btn-close-modal-trial');
+
+trialBtns.forEach(function(trialBtn) {
+    trialBtn.addEventListener('click', function() {
+        wrapperModalTrial.classList.add('wrapper-modal-trial_active');
+        btnCloseModalTrial.addEventListener('click', function() {
+            wrapperModalTrial.classList.remove('wrapper-modal-trial_active');
+        })
+    })
+})

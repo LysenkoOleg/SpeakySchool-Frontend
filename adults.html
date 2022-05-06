@@ -9,6 +9,43 @@
 </head>
 <body>
     <div class="main-wrapper">
+        <div class="wrapper-modal-trial" id="wrapper-modal-trial">
+            <div class="overlay" id="overlay"></div>
+            <div class="modal-window-trial" id="modal-window">
+                <a href="#footer" class="btn-close-modal-trial">Закрыть</a>
+                <div class="modal-window-trial__title">Записаться на пробное занятие</div>
+                <div class="modal-window-trial__subtitle">
+                    <h3 class="adults">Взрослые</h3>
+                    <h3 class="children">Дети и подростки</h3>
+                </div>
+                <form action="#" class="form">
+                    <div class="form-group">
+                        <div class="dropdown">
+                            <button type="button" class="dropdown__btn">Английский язык</button>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__list-item" data-value="english">Английский язык</li>
+                                <li class="dropdown__list-item" data-value="germany">Немецкий язык</li>
+                                <li class="dropdown__list-item" data-value="spain">Испанский язык</li>
+                                <li class="dropdown__list-item" data-value="france">Французский язык</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                        </div>
+                    </div>
+                    <div class="form__radio">
+                        <input type="radio" class="add-radio radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
+                        <input type="radio" class="radio radio2" name="radio"><label for="radio">Занятия в клубе</label>
+                    </div>
+                    <div class="form__name-phone">
+                        <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
+                        <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+                    </div>
+                    <input type="email" name="e-mail" class="under-inputs input-email style-input" placeholder="Почта">
+                </form>
+                <button type="submit" class="modal-btn">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
         <div class="wrapper-modal" id="wrapper-modal">
             <div class="overlay" id="overlay"></div>
             <div class="modal-window" id="modal-window">
@@ -64,7 +101,7 @@
             <div class="title">
                 <h1 class="title__text">ЭФФЕКТИВНОЕ ИЗУЧЕНИЕ ЯЗЫКОВ</h1>
                 <h3 class="title__subtext">Прокачайте язык вместе с нами под любые цели</h3>
-                <button type="button" class="style-btn title__btn">Пробное занятие</button>
+                <button type="button" class="style-btn title__btn trial-btn">Пробное занятие</button>
             </div>
             <div class="header__logo">
                 <img src="/img/adults/head.png" alt="head">
@@ -157,7 +194,7 @@
                     <h2 class="title__text">ИНТЕРЕСНЫ, КОГДА ОНИ ЯСНЫ</h2>
                 </div>
                 <p>А может быть язык вам нужен для путешествий? Для переезда в другую страну? Или у вас профессиональные цели и язык вам нужен для повышения? </p>
-                <button type="button" class="style-btn btn">Пробное занятие</button>
+                <button type="button" class="style-btn btn trial-btn">Пробное занятие</button>
             </div>
             <img src="/img/adults/easy.png" alt="easy">
         </div>

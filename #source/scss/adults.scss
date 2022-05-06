@@ -60,6 +60,246 @@ h3 {
     }
 }
 
+.wrapper-modal-trial {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 10;
+}
+
+.wrapper-modal-trial_active {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000;
+    opacity: 50%;
+}
+
+.modal-window-trial {
+    position: absolute;
+    max-width: 1046px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: $l-yellowclr;
+    border-radius: 70px;
+    background: url(/img/main/add_form.png) no-repeat right;
+    background-color: $l-yellowclr;
+    .btn-close-modal-trial {
+        display: block;
+        padding-top: 47px;
+        padding-left: 620px;
+        padding-right: 372px;
+        text-decoration: underline;
+        font-family: $raleway-l;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #363636;
+    }
+    .modal-window-trial__title {
+        padding-top: 19px;
+        padding-left: 106px;
+        font-size: 24px;
+        font-family: $nextart-h;
+    }
+    .modal-window-trial__subtitle {
+        display: flex;
+        cursor: pointer;
+        .adults {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 106px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: $greenclr;
+            }
+        }
+        .children {
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 20px;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: #94C6C4;
+            }
+        }
+    }
+    .form {
+        .dropwdown {
+            position: relative;
+        }
+        .dropdown__btn {
+            position: relative;
+            display: block;
+            text-align: left;
+            width: 420px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 106px;
+            padding-left: 20px;
+            border-radius: 10px;
+            font-family: $raleway-l;
+            font-size: 16px;
+            color: $d-grayclr;
+            border: 1px solid #FFECA0;
+            appearance: none;
+            background: url(/img/main/down-small.svg) no-repeat right;
+            background-color: #fff;
+            background-position-x: calc(100% - 23px);
+        }
+        .dropdown__list {
+            display: none;
+            position: absolute;
+            text-align: left;
+            width: 420px;
+            margin-top: 10px;
+            margin-left: 106px;
+            padding-left: 20px;
+            border-radius: 10px;
+            font-family: $raleway-l;
+            font-size: 16px;
+            color: $d-grayclr;
+            border: 1px solid #FFECA0;
+            background-color: #fff;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .dropdown__list_active {
+            display: block;
+        }
+        .dropdown__list-item {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .dropdown__list-item:first-of-type {
+            margin-bottom: 12px;
+            margin-top: 12px;
+            background: url(/img/main/up-small.png) no-repeat right;
+            background-position-x: calc(100% - 23px);
+        }
+        .dropdown__input-hidden {
+            display: none;
+        }
+        .form__radio {
+            display: flex;
+            align-items: center;
+            font-family: $raleway-l;
+            font-size: 16px;
+            margin-top: 14px;
+            label {
+                margin-left: 17px;
+            }
+            .radio1 {
+                margin-left: 109px;
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $greenclr;
+                border-radius: 50%;
+                position: relative;
+                z-index: 5;
+                &:checked {
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: -3px;
+                        right: -3px;
+                        width: 200%;
+                        height: 200%;
+                        border-radius: 50%;
+                        border: 1px solid $greenclr;
+                    }
+                    background: $greenclr;
+                    border: 3px solid $l-yellowclr;
+                }
+            }
+            .radio2 {
+                margin-left: 67px;
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $greenclr;
+                border-radius: 50%;
+                position: relative;
+                &:checked {
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: -3px;
+                        right: -3px;
+                        width: 200%;
+                        height: 200%;
+                        border-radius: 50%;
+                        border: 1px solid $greenclr;
+                    }
+                    background: $greenclr;
+                    border: 3px solid $l-yellowclr;
+                }
+            }
+        }
+    }
+    .under-inputs {
+        margin-top: 14px;
+        width: 200px;
+        height: 50px;
+        padding-left: 20px;
+        border: 1px solid #FFECA0;
+        border-radius: 10px;
+        font-family: $raleway-l;
+        font-size: 16px;
+    }
+    .input-name {
+        margin-left: 106px;
+    }
+    .input-phone {
+        margin-left: 16px;
+    }
+    .input-email {
+        width: 420px;
+        height: 50px;
+        margin-left: 106px;
+    }
+    .modal-btn {
+        padding: 18px 38px;
+        background: $greenclr;
+        color: #fff;
+        font-family: $raleway-sb;
+        font-size: 18px;
+        margin-left: 106px;
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 89px;
+        margin-left: 106px;
+    }
+}
+
 .wrapper-modal {
     width: 100%;
     height: 100%;

@@ -51,3 +51,14 @@ footerBtn.addEventListener('click', function() {
         wrapperModal.classList.remove('wrapper-modal_active');
     })
 })
+
+const trialBtn = document.querySelector('.trial-btn');
+const wrapperModalTrial = document.querySelector('.wrapper-modal-trial');
+const btnCloseModalTrial = document.querySelector('.btn-close-modal-trial');
+
+trialBtn.addEventListener('click', function() {
+    wrapperModalTrial.classList.add('wrapper-modal-trial_active');
+    btnCloseModalTrial.addEventListener('click', function() {
+        wrapperModalTrial.classList.remove('wrapper-modal-trial_active');
+    })
+})
