@@ -73,3 +73,35 @@ contactsPhoneBtn.addEventListener('click', function() {
         wrapperModalCall.classList.remove('wrapper-modal-call_active');
     })
 })
+
+const addFormSubTitles = document.querySelectorAll('.add-form__subtitle');
+const adultsBlock = document.querySelector('.foradults');
+const childrenBlock = document.querySelector('.forchildren');
+const addForm = document.querySelector('.add-form');
+
+function changeBlock(el) {
+    if(el == adultsBlock.dataset.value) {
+        adultsBlock.classList.add('js_active');
+        childrenBlock.classList.remove('js_active');
+        addForm.style.background = 'url(/img/main/add_form.png) no-repeat right';
+        addForm.style.backgroundColor = '#FFFBED';
+    } else if(el == childrenBlock.dataset.value) {
+        adultsBlock.classList.remove('js_active');
+        childrenBlock.classList.add('js_active');
+        addForm.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
+        addForm.style.backgroundColor = '#FFFBED';
+    }
+}
+
+addFormSubTitles.forEach(function(addFormSubTitle) {
+    addFormSubTitle.addEventListener('click', function(e) {
+        for(let i = 0; i < addFormSubTitle.children.length; i++) {
+            let currSubTitle = e.target.dataset.value
+            addFormSubTitle.children[i].classList.remove('js_active');
+            if(addFormSubTitle.children[i].dataset.value == currSubTitle) {
+                addFormSubTitle.children[i].classList.add('js_active');
+                changeBlock(currSubTitle);
+            }
+        }
+    })
+})

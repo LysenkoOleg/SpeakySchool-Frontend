@@ -164,8 +164,8 @@
     <section class="add-form">
             <div class="add-form__title">Записаться на пробное занятие</div>
             <div class="add-form__subtitle">
-                <h3 class="adults">Взрослые</h3>
-                <h3 class="children">Дети и подростки</h3>
+                <h3 class="adults js_active" data-value="adults">Взрослые</h3>
+                <h3 class="children" data-value="children">Дети и подростки</h3>
             </div>
             <form action="#" class="form">
                 <div class="form-group">
@@ -184,9 +184,21 @@
                     <input type="radio" class="add-radio radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
                     <input type="radio" class="radio radio2" name="radio"><label for="radio">Занятия в клубе</label>
                 </div>
-                <div class="form__name-phone">
-                    <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
-                    <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+                <div class="foradults js_active" data-value="adults">
+                    <div class="form__name-phone">
+                        <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
+                        <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="forchildren" data-value="children">
+                    <div class="form__name-phone">
+                        <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя родителя">
+                        <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+                    </div>
+                    <div class="form__name-age">
+                        <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя ребенка">
+                        <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Возраст ребенка">
+                    </div>
                 </div>
                 <input type="email" name="e-mail" class="under-inputs input-email style-input" placeholder="Почта">
             </form>
@@ -315,8 +327,8 @@
     <section class="add-form">
         <div class="add-form__title">Записаться на пробное занятие</div>
         <div class="add-form__subtitle">
-            <h3 class="adults">Взрослые</h3>
-            <h3 class="children">Дети и подростки</h3>
+            <h3 class="adults js_active" data-value="adults">Взрослые</h3>
+            <h3 class="children" data-value="children">Дети и подростки</h3>
         </div>
         <form action="#" class="form">
             <div class="form-group">
@@ -335,9 +347,21 @@
                 <input type="radio" class="radio1" name="radio" checked><label for="radio">Онлайн-занятия</label>
                 <input type="radio" class="radio2" name="radio"><label for="radio">Занятия в клубе</label>
             </div>
-            <div class="form__name-phone">
-                <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
-                <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+            <div class="foradults js_active" data-value="adults">
+                <div class="form__name-phone">
+                    <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя">
+                    <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+                </div>
+            </div>
+            <div class="forchildren" data-value="children">
+                <div class="form__name-phone">
+                    <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя родителя">
+                    <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Телефон">
+                </div>
+                <div class="form__name-age">
+                    <input type="text" name="name" class="under-inputs input-name style-input" placeholder="Имя ребенка">
+                    <input type="phone" name="phone" class="under-inputs input-phone style-input" placeholder="Возраст ребенка">
+                </div>
             </div>
             <input type="email" name="e-mail" class="under-inputs input-email style-input" placeholder="Почта">
         </form>

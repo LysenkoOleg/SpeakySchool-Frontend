@@ -718,6 +718,15 @@ h3 {
                 bottom: 0;
                 height: 2px;
                 left: 0;
+                background: #94C6C4;
+            }
+            &.js_active:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
                 background: $greenclr;
             }
         }
@@ -736,6 +745,15 @@ h3 {
                 height: 2px;
                 left: 0;
                 background: #94C6C4;
+            }
+            &.js_active:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: $greenclr;
             }
         }
     }
@@ -852,6 +870,18 @@ h3 {
                 }
             }
         }
+    }
+    .foradults {
+        display: none;
+    }
+    .foradults.js_active {
+        display: block;
+    }
+    .forchildren {
+        display: none;
+    }
+    .forchildren.js_active {
+        display: block;
     }
     .under-inputs {
         margin-top: 14px;

@@ -893,6 +893,15 @@ h3 {
   bottom: 0;
   height: 2px;
   left: 0;
+  background: #94C6C4;
+}
+.add-form .add-form__subtitle .adults.js_active:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
   background: #236967;
 }
 .add-form .add-form__subtitle .children {
@@ -911,6 +920,15 @@ h3 {
   height: 2px;
   left: 0;
   background: #94C6C4;
+}
+.add-form .add-form__subtitle .children.js_active:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #236967;
 }
 .add-form .form .dropwdown {
   position: relative;
@@ -1033,6 +1051,18 @@ h3 {
   height: 200%;
   border-radius: 50%;
   border: 1px solid #236967;
+}
+.add-form .foradults {
+  display: none;
+}
+.add-form .foradults.js_active {
+  display: block;
+}
+.add-form .forchildren {
+  display: none;
+}
+.add-form .forchildren.js_active {
+  display: block;
 }
 .add-form .under-inputs {
   margin-top: 14px;
