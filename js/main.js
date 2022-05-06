@@ -62,3 +62,14 @@ trialBtn.addEventListener('click', function() {
         wrapperModalTrial.classList.remove('wrapper-modal-trial_active');
     })
 })
+
+const contactsPhoneBtn = document.querySelector('.contacts__phone');
+const wrapperModalCall = document.querySelector('.wrapper-modal-call');
+const btnCloseModalCall = document.querySelector('.btn-close-modal-call');
+
+contactsPhoneBtn.addEventListener('click', function() {
+    wrapperModalCall.classList.add('wrapper-modal-call_active');
+    btnCloseModalCall.addEventListener('click', function() {
+        wrapperModalCall.classList.remove('wrapper-modal-call_active');
+    })
+})

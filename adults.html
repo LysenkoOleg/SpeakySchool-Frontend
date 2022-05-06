@@ -9,6 +9,22 @@
 </head>
 <body>
     <div class="main-wrapper">
+        <div class="wrapper-modal-call">
+            <div class="overlay" id="overlay"></div>
+            <div class="modal-window-call">
+                <a href="#footer" class="btn-close-modal-call">Закрыть</a>
+                <h2 class="modal-window__title">ЗАКАЗАТЬ ЗВОНОК</h2>
+                <form action="#footer" class="modal-window__form">
+                    <div class="inputs">
+                        <input type="text" class="input" placeholder="Имя" name="name">
+                        <input type="tel" class="input" placeholder="Телефон" name="phone">
+                    </div>
+                </form>
+                <button type="submit" class="modal-btn style-btn" id="modal-btn">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
         <div class="wrapper-modal-trial" id="wrapper-modal-trial">
             <div class="overlay" id="overlay"></div>
             <div class="modal-window-trial" id="modal-window">
@@ -41,7 +57,7 @@
                     </div>
                     <input type="email" name="e-mail" class="under-inputs input-email style-input" placeholder="Почта">
                 </form>
-                <button type="submit" class="modal-btn">Отправить</button>
+                <button type="submit" class="modal-btn style-btn">Отправить</button>
             </div>
         </div>
     </div>
@@ -62,7 +78,7 @@
                     </div>
                 </form>
                 <p class="modal-window__text">Нажимая кнопку "Оплатить", Вы соглашаетесь с условиями договора оферты и обработку персональных данных.</p>
-                <button type="submit" class="modal-btn" id="modal-btn">Отправить</button>
+                <button type="submit" class="modal-btn style-btn" id="modal-btn">Отправить</button>
             </div>
         </div>
     </div>
@@ -91,7 +107,7 @@
             <a href="https://vk.com/" class="contacts__vk">
                 <img src="/img/main/vk.png" alt="vk">
             </a>
-            <a href="tel: +7-918-4444-581" class="contacts__phone">
+            <a href="#header" class="contacts__phone">
                 <img src="/img/main/phone.png" alt="phone">
             </a>
         </div>
