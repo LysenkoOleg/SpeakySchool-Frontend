@@ -873,14 +873,19 @@ h3 {
                 margin-top: 30px;
             }
             .base {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 justify-content: center;
                 width: 234px;
                 height: 146px;
                 background: url(/img/adults/base.png);
                 margin-top: 40px;
-                padding-left: 42px;
+                padding-left: 35px;
+                &.middle {
+                    div {
+                        margin-top: 2px;
+                    }
+                }
                 .base-radio {
                     appearance: none;
                     width: 12px;
@@ -914,6 +919,9 @@ h3 {
                 div:first-of-type {
                     margin-top: 25px;
                 }
+            }
+            .base.js_active {
+                display: flex;
             }
         }
     }

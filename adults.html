@@ -235,27 +235,29 @@
         <h3 class="learning__subtitle">Выбирайте удобный формат встреч</h3>
         <div class="options">
                 <div class="option">
-                    <input type="radio" name="radio" class="option__radio" checked>
+                    <input type="radio" name="radio" class="option__radio" data-value="1" checked>
                     <h3>Вид обучения</h3>
-                    <div class="base">
+                    <div class="base js_active" data-value="1">
                         <div><input type="radio" name="radio-base" class="base-radio" checked><p>Офлайн-занятия</p></div>
                         <div><input type="radio" name="radio-base" class="base-radio"><p>Онлайн-занятия</p></div>
                     </div>
                 </div>
                 <div class="option">
-                    <input type="radio" name="radio" class="option__radio">
+                    <input type="radio" name="radio" class="option__radio" data-value="2">
                     <h3>Вид занятия</h3>
-                    <div class="base" style="display: none;">
-                        <input type="radio" name="radio-base" class="base-radio">
-                        <input type="radio" name="radio-base" class="base-radio">
+                    <div class="base middle" data-value="2">
+                        <div><input type="radio" name="radio2-base" class="base-radio" checked><p>Английский язык</p></div>
+                        <div><input type="radio" name="radio2-base" class="base-radio"><p>Немецкий язык</p></div>
+                        <div><input type="radio" name="radio2-base" class="base-radio"><p>Испанский язык</p></div>
+                        <div><input type="radio" name="radio2-base" class="base-radio"><p>Французский язык</p></div>
                     </div>
                 </div>
                 <div class="option">
-                    <input type="radio" name="radio" class="option__radio">
+                    <input type="radio" name="radio" class="option__radio" data-value="3">
                     <h3>Вид деятельности</h3>
-                    <div class="base" style="display: none;">
-                        <input type="radio" name="radio-base" class="base-radio">
-                        <input type="radio" name="radio-base" class="base-radio">
+                    <div class="base" data-value="3">
+                        <div><input type="radio" name="radio3-base" class="base-radio" checked><p>Изучение с нуля</p></div>
+                        <div><input type="radio" name="radio3-base" class="base-radio"><p>Улучшение навыков</p></div>
                     </div>
                 </div>
         </div>

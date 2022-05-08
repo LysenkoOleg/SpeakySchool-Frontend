@@ -1030,9 +1030,7 @@ h3 {
   margin-top: 30px;
 }
 .learning .options .option .base {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1044,7 +1042,10 @@ h3 {
   height: 146px;
   background: url(/img/adults/base.png);
   margin-top: 40px;
-  padding-left: 42px;
+  padding-left: 35px;
+}
+.learning .options .option .base.middle div {
+  margin-top: 2px;
 }
 .learning .options .option .base .base-radio {
   -webkit-appearance: none;
@@ -1084,6 +1085,11 @@ h3 {
 }
 .learning .options .option .base div:first-of-type {
   margin-top: 25px;
+}
+.learning .options .option .base.js_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .add-form {
