@@ -75,22 +75,28 @@ contactsPhoneBtn.addEventListener('click', function() {
 })
 
 const addFormSubTitles = document.querySelectorAll('.add-form__subtitle');
-const adultsBlock = document.querySelector('.foradults');
-const childrenBlock = document.querySelector('.forchildren');
-const addForm = document.querySelector('.add-form');
+const adultsBlocks = document.querySelectorAll('.foradults');
+const childrenBlocks = document.querySelectorAll('.forchildren');
+const addForms = document.querySelectorAll('.add-form');
 
 function changeBlock(el) {
-    if(el == adultsBlock.dataset.value) {
-        adultsBlock.classList.add('js_active');
-        childrenBlock.classList.remove('js_active');
-        addForm.style.background = 'url(/img/main/add_form.png) no-repeat right';
-        addForm.style.backgroundColor = '#FFFBED';
-    } else if(el == childrenBlock.dataset.value) {
-        adultsBlock.classList.remove('js_active');
-        childrenBlock.classList.add('js_active');
-        addForm.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
-        addForm.style.backgroundColor = '#FFFBED';
-    }
+    adultsBlocks.forEach(function(adultsBlock) {
+        if(el == adultsBlock.dataset.value) {
+            adultsBlock.classList.add('js_active');
+            childrenBlocks.forEach(function(childrenBlock) {
+                childrenBlock.classList.remove('js_active');
+            })
+        } else {
+            childrenBlocks.forEach(function(childrenBlock) {
+                adultsBlock.classList.remove('js_active');
+                childrenBlock.classList.add('js_active');
+                addForms.forEach(function(addForm) {
+                    addForm.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
+                    addForm.style.backgroundColor = '#FFFBED';
+                })
+            })
+        }
+    })
 }
 
 addFormSubTitles.forEach(function(addFormSubTitle) {
