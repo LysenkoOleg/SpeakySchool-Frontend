@@ -78,6 +78,7 @@ const addFormSubTitles = document.querySelectorAll('.add-form__subtitle');
 const adultsBlocks = document.querySelectorAll('.foradults');
 const childrenBlocks = document.querySelectorAll('.forchildren');
 const addForms = document.querySelectorAll('.add-form');
+const modalWindows = document.querySelectorAll('.modal-window-trial');
 
 function changeBlock(el) {
     adultsBlocks.forEach(function(adultsBlock) {
@@ -93,6 +94,10 @@ function changeBlock(el) {
                 addForms.forEach(function(addForm) {
                     addForm.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
                     addForm.style.backgroundColor = '#FFFBED';
+                })
+                modalWindows.forEach(function(modalWindow) {
+                    modalWindow.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
+                    modalWindow.style.backgroundColor = '#FFFBED';
                 })
             })
         }
