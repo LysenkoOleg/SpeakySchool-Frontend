@@ -275,13 +275,13 @@ h3 {
   font-size: 24px;
   font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
 }
-.modal-window-trial .modal-window-trial__subtitle {
+.modal-window-trial .add-form__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
 }
-.modal-window-trial .modal-window-trial__subtitle .adults {
+.modal-window-trial .add-form__subtitle .adults {
   width: 200px;
   height: 30px;
   text-align: center;
@@ -289,7 +289,16 @@ h3 {
   margin-left: 106px;
   position: relative;
 }
-.modal-window-trial .modal-window-trial__subtitle .adults:after {
+.modal-window-trial .add-form__subtitle .adults:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #94C6C4;
+}
+.modal-window-trial .add-form__subtitle .adults.js_active:after {
   content: "";
   position: absolute;
   width: 200px;
@@ -298,7 +307,7 @@ h3 {
   left: 0;
   background: #236967;
 }
-.modal-window-trial .modal-window-trial__subtitle .children {
+.modal-window-trial .add-form__subtitle .children {
   width: 200px;
   height: 30px;
   text-align: center;
@@ -306,7 +315,7 @@ h3 {
   margin-left: 20px;
   position: relative;
 }
-.modal-window-trial .modal-window-trial__subtitle .children:after {
+.modal-window-trial .add-form__subtitle .children:after {
   content: "";
   position: absolute;
   width: 200px;
@@ -314,6 +323,15 @@ h3 {
   height: 2px;
   left: 0;
   background: #94C6C4;
+}
+.modal-window-trial .add-form__subtitle .children.js_active:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #236967;
 }
 .modal-window-trial .form .dropwdown {
   position: relative;
@@ -438,6 +456,18 @@ h3 {
   border-radius: 50%;
   border: 1px solid #236967;
 }
+.modal-window-trial .foradults {
+  display: none;
+}
+.modal-window-trial .foradults.js_active {
+  display: block;
+}
+.modal-window-trial .forchildren {
+  display: none;
+}
+.modal-window-trial .forchildren.js_active {
+  display: block;
+}
 .modal-window-trial .under-inputs {
   margin-top: 14px;
   width: 200px;
@@ -468,7 +498,7 @@ h3 {
   margin-left: 106px;
   border-radius: 30px;
   margin-top: 30px;
-  margin-bottom: 89px;
+  margin-bottom: 85px;
   margin-left: 106px;
 }
 
@@ -1203,6 +1233,15 @@ h3 {
   left: 0;
   background: #94C6C4;
 }
+.add-form .add-form__subtitle .adults.js_active:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #236967;
+}
 .add-form .add-form__subtitle .children {
   width: 200px;
   height: 30px;
@@ -1212,6 +1251,15 @@ h3 {
   position: relative;
 }
 .add-form .add-form__subtitle .children:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  background: #94C6C4;
+}
+.add-form .add-form__subtitle .children.js_active:after {
   content: "";
   position: absolute;
   width: 200px;
@@ -1341,6 +1389,18 @@ h3 {
   height: 200%;
   border-radius: 50%;
   border: 1px solid #236967;
+}
+.add-form .foradults {
+  display: none;
+}
+.add-form .foradults.js_active {
+  display: block;
+}
+.add-form .forchildren {
+  display: none;
+}
+.add-form .forchildren.js_active {
+  display: block;
 }
 .add-form .under-inputs {
   margin-top: 14px;

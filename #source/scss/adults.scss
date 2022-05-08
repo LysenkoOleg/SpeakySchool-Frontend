@@ -194,7 +194,7 @@ h3 {
         font-size: 24px;
         font-family: $nextart-h;
     }
-    .modal-window-trial__subtitle {
+    .add-form__subtitle {
         display: flex;
         cursor: pointer;
         .adults {
@@ -205,6 +205,15 @@ h3 {
             margin-left: 106px;
             position: relative;
             &:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: #94C6C4;
+            }
+            &.js_active:after {
                 content: '';
                 position: absolute;
                 width: 200px;
@@ -229,6 +238,15 @@ h3 {
                 height: 2px;
                 left: 0;
                 background: #94C6C4;
+            }
+            &.js_active:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: $greenclr;
             }
         }
     }
@@ -347,6 +365,18 @@ h3 {
             }
         }
     }
+    .foradults {
+        display: none;
+    }
+    .foradults.js_active {
+        display: block;
+    }
+    .forchildren {
+        display: none;
+    }
+    .forchildren.js_active {
+        display: block;
+    }
     .under-inputs {
         margin-top: 14px;
         width: 200px;
@@ -377,7 +407,7 @@ h3 {
         margin-left: 106px;
         border-radius: 30px;
         margin-top: 30px;
-        margin-bottom: 89px;
+        margin-bottom: 85px;
         margin-left: 106px;
     }
 }
@@ -921,6 +951,15 @@ h3 {
                 left: 0;
                 background: #94C6C4;
             }
+            &.js_active:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: $greenclr;
+            }
         }
         .children {
             width: 200px;
@@ -930,6 +969,15 @@ h3 {
             margin-left: 20px;
             position: relative;
             &:after {
+                content: '';
+                position: absolute;
+                width: 200px;
+                bottom: 0;
+                height: 2px;
+                left: 0;
+                background: #94C6C4;
+            }
+            &.js_active:after {
                 content: '';
                 position: absolute;
                 width: 200px;
@@ -1053,6 +1101,18 @@ h3 {
                 }
             }
         }
+    }
+    .foradults {
+        display: none;
+    }
+    .foradults.js_active {
+        display: block;
+    }
+    .forchildren {
+        display: none;
+    }
+    .forchildren.js_active {
+        display: block;
     }
     .under-inputs {
         margin-top: 14px;

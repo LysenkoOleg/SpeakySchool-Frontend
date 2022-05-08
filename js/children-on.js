@@ -75,3 +75,46 @@ contactsPhoneBtn.addEventListener('click', function() {
         wrapperModalCall.classList.remove('wrapper-modal-call_active');
     })
 })
+
+const addFormSubTitles = document.querySelectorAll('.add-form__subtitle');
+const adultsBlocks = document.querySelectorAll('.foradults');
+const childrenBlocks = document.querySelectorAll('.forchildren');
+const addForms = document.querySelectorAll('.add-form');
+const modalWindows = document.querySelectorAll('.modal-window-trial');
+
+function changeBlock(el) {
+    adultsBlocks.forEach(function(adultsBlock) {
+        if(el == adultsBlock.dataset.value) {
+            adultsBlock.classList.add('js_active');
+            childrenBlocks.forEach(function(childrenBlock) {
+                childrenBlock.classList.remove('js_active');
+            })
+        } else {
+            childrenBlocks.forEach(function(childrenBlock) {
+                adultsBlock.classList.remove('js_active');
+                childrenBlock.classList.add('js_active');
+                addForms.forEach(function(addForm) {
+                    addForm.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
+                    addForm.style.backgroundColor = '#FFFBED';
+                })
+                modalWindows.forEach(function(modalWindow) {
+                    modalWindow.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
+                    modalWindow.style.backgroundColor = '#FFFBED';
+                })
+            })
+        }
+    })
+}
+
+addFormSubTitles.forEach(function(addFormSubTitle) {
+    addFormSubTitle.addEventListener('click', function(e) {
+        for(let i = 0; i < addFormSubTitle.children.length; i++) {
+            let currSubTitle = e.target.dataset.value
+            addFormSubTitle.children[i].classList.remove('js_active');
+            if(addFormSubTitle.children[i].dataset.value == currSubTitle) {
+                addFormSubTitle.children[i].classList.add('js_active');
+                changeBlock(currSubTitle);
+            }
+        }
+    })
+})
