@@ -1246,7 +1246,7 @@ h3 {
     .description {
         max-width: 702px;
         margin: 60px auto;
-        display: flex;
+        display: none;
         align-items: center;
         .description__block {
             margin-left: 82px;
@@ -1256,6 +1256,9 @@ h3 {
                 margin-bottom: 13px;
             }
         }
+    }
+    .description.js_active {
+        display: flex;
     }
 }
 

@@ -116,3 +116,18 @@ addFormSubTitles.forEach(function(addFormSubTitle) {
         }
     })
 })
+
+const radios = document.querySelectorAll('.radio');
+const descriptions = document.querySelectorAll('.description');
+
+radios.forEach(function(radio) {
+    radio.addEventListener('click', function(e) {
+        let currRadio = e.target.dataset.value;
+        descriptions.forEach(function(description) {
+            description.classList.remove('js_active')
+            if(description.dataset.value == currRadio) {
+                description.classList.add('js_active');
+            }
+        })
+    })
+})
