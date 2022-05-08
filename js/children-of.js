@@ -1,16 +1,13 @@
 const chilrenBtn = document.getElementById('children');
-const childrenOption = document.getElementById('children-option');
+const childrenOption = document.querySelector('.children-option');
 
-let statusBlock = true;
-
-children.addEventListener('click', () => {
-    if(statusBlock == true) {
-        childrenOption.classList.add('active')
-        statusBlock = false
-    } else {
-        childrenOption.classList.remove('active')
-        statusBlock = true
-    }
+chilrenBtn.addEventListener('click', () => {
+    childrenOption.classList.toggle('active');
+    document.addEventListener('click', function(e) {
+        if(e.target !== chilrenBtn) {
+            childrenOption.classList.remove('active');
+        }
+    })
 })
 
 const dropdowns = document.querySelectorAll('.dropdown');
@@ -116,5 +113,26 @@ addFormSubTitles.forEach(function(addFormSubTitle) {
                 changeBlock(currSubTitle);
             }
         }
+    })
+})
+
+const programms = document.querySelectorAll('.programs');
+const subTitleBtns = document.querySelectorAll('.subtitle__item');
+
+subTitleBtns.forEach(function(subTitleBtn) {
+    subTitleBtn.addEventListener('click', function(e) {
+        subTitleBtns.forEach(function(subTitleBtn) {
+            subTitleBtn.classList.remove('js_active');
+        })
+        let currBtn = e.target.dataset.value;
+        if(subTitleBtn.dataset.value == currBtn) {
+            subTitleBtn.classList.add('js_active');
+        }
+        programms.forEach(function(program) {
+            program.classList.remove('js_active');
+            if(program.dataset.value == currBtn) {
+                program.classList.add('js_active');
+            }
+        })
     })
 })

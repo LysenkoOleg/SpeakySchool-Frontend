@@ -1,16 +1,13 @@
 const chilrenBtn = document.getElementById('children');
-const childrenOption = document.getElementById('children-option');
-
-let statusBlock = true;
+const childrenOption = document.querySelector('.children-option');
 
 chilrenBtn.addEventListener('click', () => {
-    if(statusBlock == true) {
-        childrenOption.classList.add('active')
-        statusBlock = false
-    } else {
-        childrenOption.classList.remove('active')
-        statusBlock = true
-    }
+    childrenOption.classList.toggle('active');
+    document.addEventListener('click', function(e) {
+        if(e.target !== chilrenBtn) {
+            childrenOption.classList.remove('active');
+        }
+    })
 })
 
 const dropdowns = document.querySelectorAll('.dropdown');

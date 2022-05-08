@@ -891,7 +891,7 @@ h3 {
         text-align: center;
         margin: 0 auto;
         cursor: pointer;
-        .left {
+        .subtitle__item {
             width: 260px;
             margin-right: 20px;
             position: relative;
@@ -901,44 +901,20 @@ h3 {
                 height: 2px;
                 bottom: 0;
                 left: 0;
+                background: $mintclr;
+                position: absolute;
+            }
+            &.js_active::after {
                 background: $greenclr;
-                position: absolute;
-            }
-        }
-        .middle {
-            width: 260px;
-            margin-right: 20px;
-            position: relative;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background: $mintclr;
-                position: absolute;
-            }
-        }
-        .right {
-            width: 260px;
-            position: relative;
-            &::after {
-                content: "";
-                width: 100%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                background: $mintclr;
-                position: absolute;
             }
         }
     }
     .programs {
-        display: flex;
+        display: none;
         align-items: center;
         width: 100%;
         margin: 40px auto 0;
-        .program1 {
+        .program {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -947,13 +923,20 @@ h3 {
             border-radius: 30px;
             background: url(/img/children_on/lessons_30minutes_04.png) no-repeat top;
             background-color: $l-yellowclr;
+            &.program_middle {
+                width: 300px;
+                height: 440px;
+                margin-left: 73px;
+                background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
+                background-color: $l-yellowclr;
+            }
             h3 {
                 margin-top: 190px;
                 color: $d-grayclr;
             }
             .price {
                 margin-top: 14px;
-                margin-bottom: 58px;
+                margin-bottom: 38px;
                 font-family: $nextart-h;
                 font-size: 22px;
                 letter-spacing: 0.02em;
@@ -967,64 +950,37 @@ h3 {
                 font-size: 18px;
             }
         }
-        .program2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 300px;
-            height: 440px;
-            border-radius: 30px;
-            margin-left: 73px;
-            background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
-            background-color: $l-yellowclr;
-            h3 {
-                margin-top: 190px;
-                color: $d-grayclr;
+        &.programs_group {
+            .program {
+                background: url(/img/children_of/groups_60minutes04.png) no-repeat top;
+                background-color: $l-yellowclr;
+                p {
+                    font-size: 12px;
+                    margin-top: 19px;
+                }
             }
-            .price {
-                margin-top: 14px;
-                margin-bottom: 58px;
-                font-family: $nextart-h;
-                font-size: 22px;
-                letter-spacing: 0.02em;
+            .program_middle {
+                background: url(/img/children_of/groups_60minutes08.png) no-repeat top;
+                background-color: $l-yellowclr;
             }
-            .program-btn {
-                border-radius: 30px;
-                padding: 18px 38px;
-                background-color: $greenclr;
-                color: white;
-                font-family: $raleway-sb;
-                font-size: 18px;
+            .program_right {
+                margin-left: 73px;
+                background: url(/img/children_of/groups_60minutes12.png) no-repeat top;
+                background-color: $l-yellowclr;
             }
         }
-        .program3 {
+        &.programs_tell {
+            .program {
+                background: url(/img/children_of/tell_4.png) no-repeat top;
+                background-color: $l-yellowclr;
+            }
+            .program_middle {
+                background: url(/img/children_of/tell.png) no-repeat top;
+                background-color: $l-yellowclr;
+            }
+        }
+        &.js_active {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 300px;
-            height: 420px;
-            border-radius: 30px;
-            background: url(/img/children_on/lessons_30minutes12.png) no-repeat top;
-            background-color: $l-yellowclr;
-            h3 {
-                margin-top: 190px;
-                color: $d-grayclr;
-            }
-            .price {
-                margin-top: 14px;
-                margin-bottom: 58px;
-                font-family: $nextart-h;
-                font-size: 22px;
-                letter-spacing: 0.02em;
-            }
-            .program-btn {
-                border-radius: 30px;
-                padding: 18px 38px;
-                background-color: $greenclr;
-                color: white;
-                font-family: $raleway-sb;
-                font-size: 18px;
-            }
         }
     }
 }
