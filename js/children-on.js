@@ -121,7 +121,7 @@ const subTitleDown = document.querySelector('.subtitle-down');
 const subTitleDowns = document.querySelectorAll('.subtitle-down__item');
 const programs = document.querySelectorAll('.programs');
 
-function changeBlock(el) {
+function changeBlocks(el) {
     programs.forEach(function(program) {
         program.classList.remove('js_active');
         if(program.dataset.time == el) {
@@ -142,10 +142,10 @@ subTitleUpItems.forEach(function(subItem) {
         e.target.classList.add('js_active');
         if(currSubTitle == subTitleDown.dataset.value) {
             subTitleDown.classList.add('js_active');
-            changeBlock(subItem.dataset.value)
+            changeBlocks(subItem.dataset.value)
         } else {
             subTitleDown.classList.remove('js_active');
-            changeBlock(subItem.dataset.value)
+            changeBlocks(subItem.dataset.value)
         }
     })
 })
@@ -154,7 +154,7 @@ subTitleDowns.forEach(function(downItem) {
         let currSubItem = e.target.dataset.value;
         subTitleDowns.forEach(function(item) {
             item.classList.remove('js_active');
-            changeBlock(currSubItem);
+            changeBlocks(currSubItem);
         })
         if(downItem.dataset.value == currSubItem) {
             downItem.classList.add('js_active');
