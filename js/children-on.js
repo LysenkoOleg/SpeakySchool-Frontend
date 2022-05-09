@@ -115,3 +115,49 @@ addFormSubTitles.forEach(function(addFormSubTitle) {
         }
     })
 })
+
+const subTitleUpItems = document.querySelectorAll('.subtitle-up__item');
+const subTitleDown = document.querySelector('.subtitle-down');
+const subTitleDowns = document.querySelectorAll('.subtitle-down__item');
+const programs = document.querySelectorAll('.programs');
+
+function changeBlock(el) {
+    programs.forEach(function(program) {
+        program.classList.remove('js_active');
+        if(program.dataset.time == el) {
+            program.classList.add('js_active');
+        }
+        if(program.dataset.value == el) {
+            program.classList.add('js_active');
+        }
+    })
+}
+
+subTitleUpItems.forEach(function(subItem) {
+    subItem.addEventListener('click', function(e) {
+        let currSubTitle = e.target.dataset.value;
+        subTitleUpItems.forEach(function(item) {
+            item.classList.remove('js_active')
+        })
+        e.target.classList.add('js_active');
+        if(currSubTitle == subTitleDown.dataset.value) {
+            subTitleDown.classList.add('js_active');
+            changeBlock(subItem.dataset.value)
+        } else {
+            subTitleDown.classList.remove('js_active');
+            changeBlock(subItem.dataset.value)
+        }
+    })
+})
+subTitleDowns.forEach(function(downItem) {
+    downItem.addEventListener('click', function(e) {
+        let currSubItem = e.target.dataset.value;
+        subTitleDowns.forEach(function(item) {
+            item.classList.remove('js_active');
+            changeBlock(currSubItem);
+        })
+        if(downItem.dataset.value == currSubItem) {
+            downItem.classList.add('js_active');
+        }
+    })
+})

@@ -1072,9 +1072,15 @@ h3 {
   background: url(/img/children_on/lessons_30minutes_04.png) no-repeat top;
   background-color: #FFFBED;
 }
-.educations .programs .program.program_middle {
+.educations .programs .program:hover {
   width: 300px;
   height: 440px;
+  -webkit-box-shadow: 2px 2px 16px #e7ddb9;
+          box-shadow: 2px 2px 16px #e7ddb9;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.educations .programs .program.program_middle {
   margin-left: 73px;
   background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
   background-color: #FFFBED;

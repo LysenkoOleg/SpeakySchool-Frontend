@@ -1014,12 +1014,12 @@ h3 {
   margin: 0 auto;
   cursor: pointer;
 }
-.educations .subtitle-up .left {
+.educations .subtitle-up .subtitle-up__item {
   width: 260px;
   margin-right: 20px;
   position: relative;
 }
-.educations .subtitle-up .left::after {
+.educations .subtitle-up .subtitle-up__item::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -1028,34 +1028,22 @@ h3 {
   background: #61B5A9;
   position: absolute;
 }
-.educations .subtitle-up .right {
-  width: 260px;
-  position: relative;
-}
-.educations .subtitle-up .right::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background: #61B5A9;
-  position: absolute;
+.educations .subtitle-up .subtitle-up__item.js_active::after {
+  background: #236967;
 }
 .educations .subtitle-down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 260px;
   text-align: center;
   margin: 33px auto 0;
   cursor: pointer;
 }
-.educations .subtitle-down .left {
+.educations .subtitle-down .subtitle-down__item {
   width: 140px;
   margin-right: 20px;
   position: relative;
 }
-.educations .subtitle-down .left::after {
+.educations .subtitle-down .subtitle-down__item::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -1064,30 +1052,26 @@ h3 {
   background: #61B5A9;
   position: absolute;
 }
-.educations .subtitle-down .right {
-  width: 140px;
-  position: relative;
+.educations .subtitle-down .subtitle-down__item.js_active::after {
+  background: #236967;
 }
-.educations .subtitle-down .right::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background: #61B5A9;
-  position: absolute;
-}
-.educations .programs {
+.educations .subtitle-down.js_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.educations .programs {
+  display: none;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 40px auto 0;
 }
-.educations .programs .program1 {
+.educations .programs .program {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1104,18 +1088,26 @@ h3 {
   background: url(/img/children_on/lessons_30minutes_04.png) no-repeat top;
   background-color: #FFFBED;
 }
-.educations .programs .program1 h3 {
+.educations .programs .program:hover {
+  width: 300px;
+  height: 440px;
+  -webkit-box-shadow: 2px 2px 16px #e7ddb9;
+          box-shadow: 2px 2px 16px #e7ddb9;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.educations .programs .program h3 {
   margin-top: 190px;
   color: #363636;
 }
-.educations .programs .program1 .price {
+.educations .programs .program .price {
   margin-top: 14px;
-  margin-bottom: 58px;
+  margin-bottom: 40px;
   font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
   font-size: 22px;
   letter-spacing: 0.02em;
 }
-.educations .programs .program1 .program-btn {
+.educations .programs .program .program-btn {
   border-radius: 30px;
   padding: 18px 38px;
   background-color: #236967;
@@ -1123,77 +1115,44 @@ h3 {
   font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
-.educations .programs .program2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 300px;
-  height: 440px;
-  border-radius: 30px;
+.educations .programs .program.program_middle {
   background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
   background-color: #FFFBED;
 }
-.educations .programs .program2 h3 {
-  margin-top: 190px;
-  color: #363636;
-}
-.educations .programs .program2 .price {
-  margin-top: 14px;
-  margin-bottom: 58px;
-  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.02em;
-}
-.educations .programs .program2 .program-btn {
-  border-radius: 30px;
-  padding: 18px 38px;
-  background-color: #236967;
-  color: white;
-  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
-.educations .programs .program3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 300px;
-  height: 420px;
-  border-radius: 30px;
+.educations .programs .program.program_right {
   background: url(/img/children_on/lessons_30minutes12.png) no-repeat top;
   background-color: #FFFBED;
 }
-.educations .programs .program3 h3 {
-  margin-top: 190px;
-  color: #363636;
+.educations .programs.programs_60 .program {
+  background: url(/img/children_on/lessons_60minutes04.png) no-repeat top;
+  background-color: #FFFBED;
 }
-.educations .programs .program3 .price {
-  margin-top: 14px;
-  margin-bottom: 58px;
-  font-family: "Nextart-Heavy", Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.02em;
+.educations .programs.programs_60 .program_middle {
+  background: url(/img/children_on/lessons_60minutes08.png) no-repeat top;
+  background-color: #FFFBED;
 }
-.educations .programs .program3 .program-btn {
-  border-radius: 30px;
-  padding: 18px 38px;
-  background-color: #236967;
-  color: white;
-  font-family: "Raleway-Semibold", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+.educations .programs.programs_60 .program_right {
+  background: url(/img/children_on/lessons_60minutes12.png) no-repeat top;
+  background-color: #FFFBED;
+}
+.educations .programs.programs_tell {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.educations .programs.programs_tell .program {
+  background: url(/img/children_on/club_60minutes04.png) no-repeat top;
+  background-color: #FFFBED;
+}
+.educations .programs.programs_tell .program_middle {
+  margin-left: 73px;
+  background: url(/img/children_on/club_60minutes08.png) no-repeat top;
+  background-color: #FFFBED;
+}
+.educations .programs.js_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .add-form {

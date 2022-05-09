@@ -923,9 +923,13 @@ h3 {
             border-radius: 30px;
             background: url(/img/children_on/lessons_30minutes_04.png) no-repeat top;
             background-color: $l-yellowclr;
-            &.program_middle {
+            &:hover {
                 width: 300px;
                 height: 440px;
+                box-shadow: 2px 2px 16px #e7ddb9;
+                transition-duration: 0.5s;
+            }
+            &.program_middle {
                 margin-left: 73px;
                 background: url(/img/children_on/lessons_30minutes08.png) no-repeat top;
                 background-color: $l-yellowclr;
