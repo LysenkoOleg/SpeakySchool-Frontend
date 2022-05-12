@@ -62,14 +62,16 @@ trialBtns.forEach(function(trialBtn) {
     })
 })
 
-const contactsPhoneBtn = document.querySelector('.contacts__phone');
+const contactsPhoneBtns = document.querySelectorAll('.contacts__phone');
 const wrapperModalCall = document.querySelector('.wrapper-modal-call');
 const btnCloseModalCall = document.querySelector('.btn-close-modal-call');
 
-contactsPhoneBtn.addEventListener('click', function() {
-    wrapperModalCall.classList.add('wrapper-modal-call_active');
-    btnCloseModalCall.addEventListener('click', function() {
-        wrapperModalCall.classList.remove('wrapper-modal-call_active');
+contactsPhoneBtns.forEach(function(contactsPhoneBtn) {
+    contactsPhoneBtn.addEventListener('click', function() {
+        wrapperModalCall.classList.add('wrapper-modal-call_active');
+        btnCloseModalCall.addEventListener('click', function() {
+            wrapperModalCall.classList.remove('wrapper-modal-call_active');
+        })
     })
 })
 
@@ -90,14 +92,6 @@ function changeBlock(el) {
             childrenBlocks.forEach(function(childrenBlock) {
                 adultsBlock.classList.remove('js_active');
                 childrenBlock.classList.add('js_active');
-                addForms.forEach(function(addForm) {
-                    addForm.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
-                    addForm.style.backgroundColor = '#FFFBED';
-                })
-                modalWindows.forEach(function(modalWindow) {
-                    modalWindow.style.background = 'url(/img/children_on/add_form.png) no-repeat right';
-                    modalWindow.style.backgroundColor = '#FFFBED';
-                })
             })
         }
     })

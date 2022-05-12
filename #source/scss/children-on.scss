@@ -148,17 +148,6 @@ h3 {
     display: block;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: #000;
-    opacity: 50%;
-}
-
 .modal-window-trial {
     position: absolute;
     max-width: 1046px;
@@ -168,7 +157,7 @@ h3 {
     z-index: 2;
     background: $l-yellowclr;
     border-radius: 70px;
-    background: url(/img/main/add_form.png) no-repeat right;
+    background: url(/img/children_on/add_form.png) no-repeat right;
     background-color: $l-yellowclr;
     .btn-close-modal-trial {
         display: block;
@@ -418,17 +407,6 @@ h3 {
     display: block;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: #000;
-    opacity: 50%;
-}
-
 .modal-window {
     position: absolute;
     max-width: 860px;
@@ -606,6 +584,7 @@ h3 {
         }
         .title__rectangle {
             @extend %bgrectangle;
+            width: 375px;
         }
     }
     .learn__language {
@@ -1823,6 +1802,124 @@ h3 {
                 width: 150px;
                 font-size: 12px;
             }
+        }
+    }
+    .wrapper-modal-call {
+        width: 375px;
+    }
+    .modal-window-call {
+        width: 375px;
+        border-radius: 50px;
+        background: url(/img/main/modal-call-mobile.png) no-repeat bottom;
+        background-color: $l-yellowclr;
+        .btn-close-modal-call {
+            padding-top: 39px;
+            padding-left: 280px;
+        }
+        .modal-window__title {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        .inputs {
+            padding-left: 20px;
+            .input {
+                margin-top: 14px;
+                width: 335px;
+                height: 50px;
+                border: 1px solid #FFECA0;
+                border-radius: 10px;
+                font-family: $raleway-l;
+                font-size: 16px;
+            }
+        }
+        .modal-btn {
+            padding: 16px 34px;
+            font-size: 14px;
+            margin-bottom: 113px;
+            margin-left: 20px;
+            margin-bottom: 350px;
+        }
+    }
+
+    .wrapper-modal-trial {
+        width: 375px;
+    }
+
+    .modal-window-trial {
+        width: 375px;
+        height: 876px;
+        border-radius: 50px;
+        background: url(/img/children_on/add_form_mobile.png) no-repeat bottom;
+        background-color: $l-yellowclr;
+        .btn-close-modal-trial {
+            padding-left: 300px;
+            padding-right: 0;
+        }
+        .modal-window-trial__title {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        .add-form__subtitle {
+            .adults {
+                width: 160px;
+                margin-left: 20px;
+                font-size: 16px;
+                &:after {
+                    width: 160px;
+                }
+                &.js_active:after {
+                    width: 160px;
+                }
+            }
+            .children {
+                width: 160px;
+                margin-top: 30px;
+                margin-left: 15px;
+                font-size: 16px;
+                &:after {
+                    width: 160px;
+                }
+                &.js_active:after {
+                    width: 160px;
+                }
+            }
+        }
+        .form {
+            .dropdown__btn {
+                height: 42px;
+                width: 335px;
+                margin-left: 20px;
+            }
+            .dropdown__list {
+                width: 335px;
+                margin-left: 20px;
+            }
+            .form__radio {
+                .radio1 {
+                    margin-left: 20px;
+                }
+                .radio2 {
+                    margin-left: 30px;
+                }
+            }
+        }
+        .under-inputs {
+            width: 158px;
+            height: 42px;
+        }
+        .input-name {
+            margin-left: 20px;
+        }
+        .input-phone {
+            margin-left: 16px;
+        }
+        .input-email {
+            width: 335px;
+            margin-left: 20px;
+        }
+        .modal-btn {
+            padding: 16px 34px;
+            font-size: 16px;
         }
     }
 }
