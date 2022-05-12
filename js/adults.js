@@ -130,3 +130,14 @@ learningRadios.forEach(function(radio) {
         })
     })
 })
+
+const burgerOpenBtn = document.querySelector('.burger');
+const burgerCloseBtn = document.querySelector('.burger-close');
+const burgerMenu = document.querySelector('.burger-menu');
+
+burgerOpenBtn.addEventListener('click', function() {
+    burgerMenu.classList.add('js_active');
+})
+burgerCloseBtn.addEventListener('click', function() {
+    burgerMenu.classList.remove('js_active');
+})
