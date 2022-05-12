@@ -616,6 +616,7 @@ h3 {
 }
 .nav .nav__logo {
   margin-right: 77px;
+  cursor: pointer;
 }
 .nav .nav__logo .burger {
   display: none;
@@ -1648,6 +1649,10 @@ h3 {
   .learn .title .title__text {
     font-size: 20px;
   }
+  .learn .title .title__rectangle {
+    width: 200px;
+    height: 8px;
+  }
   .learn .learn__language {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2204,5 +2209,58 @@ h3 {
   .modal-window-trial .modal-btn {
     padding: 16px 34px;
     font-size: 16px;
+  }
+
+  .wrapper-modal {
+    width: 375px;
+  }
+
+  .modal-window {
+    width: 375px;
+    height: 783px;
+    border-radius: 50px;
+    background: url(/img/main/modal-mobile.png) no-repeat bottom;
+    background-color: #FFFBED;
+  }
+  .modal-window .btn-close-modal {
+    padding-left: 301px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+  .modal-window .modal-window__title {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .modal-window .inputs {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modal-window .inputs div {
+    width: 335px;
+  }
+  .modal-window .inputs .input {
+    margin-top: 14px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .modal-window .inputs .input-mail {
+    width: 335px;
+  }
+  .modal-window .inputs .input-price {
+    width: 335px;
+  }
+  .modal-window .modal-window__text {
+    padding-left: 20px;
+    padding-right: 76px;
+    font-size: 12px;
+  }
+  .modal-window .modal-btn {
+    padding: 16px 34px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 111px;
   }
 }
