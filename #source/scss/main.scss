@@ -1336,6 +1336,58 @@ h3 {
     }
 }
 
+.burger-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background: $l-yellowclr;
+    border-radius: 0 0 70px 70px;
+    .burger-menu__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 20px 0px 20px;
+        margin-bottom: 40px;
+    }
+    .burger-menu__main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .link {
+            margin-bottom: 20px;
+            font-family: $raleway-m;
+        }
+        .link:last-of-type {
+            margin-bottom: 52px;
+        }
+    }
+    .burger-menu__contacts {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-bottom: 52px;
+    }
+    .burger-menu__footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 106px 60px;
+        .contacts__title {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
+        p:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    &.js_active {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .nav {
         width: 100%;
